@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Movie
 
 1. Nên viết code theo chuẩn [BEM](https://www.youtube.com/watch?v=v1hSncGZg24).
@@ -18,3 +19,7 @@
     </body>
 </html>
 ```
+=======
+# 4nime
+Only html, css anime streaming website for school project
+>>>>>>> 744f5b4730130782f9f487d08073e7a58e8d2a89
