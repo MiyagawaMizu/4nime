@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.ttf'), url('../fonts/Poppins-BlackItalic.ttf'), url('../fonts/Poppins-Bold.ttf'),
+        url('../fonts/Poppins-BoldItalic.ttf'), url('../fonts/Poppins-ExtraBold.ttf'),
+        url('../fonts/Poppins-ExtraBoldItalic.ttf'), url('../fonts/Poppins-ExtraLight.ttf'),
+        url('../fonts/Poppins-ExtraLightItalic.ttf'), url('../fonts/Poppins-Thin.ttf'),
+        url('../fonts/Poppins-ThinItalic.ttf'), url('../fonts/Poppins-Italic.ttf'), url('../fonts/Poppins-Light.ttf'),
+        url('../fonts/Poppins-LightItalic.ttf'), url('../fonts/Poppins-Medium.ttf'), url('../fonts/Poppins-MediumItalic.ttf'),
+        url('../fonts/Poppins-Regular.ttf'), url('../fonts/Poppins-SemiBold.ttf'), url('../fonts/Poppins-SemiBoldItalic.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
