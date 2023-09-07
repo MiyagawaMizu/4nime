@@ -5,8 +5,9 @@
         url('../fonts/Poppins-ExtraBoldItalic.ttf'), url('../fonts/Poppins-ExtraLight.ttf'),
         url('../fonts/Poppins-ExtraLightItalic.ttf'), url('../fonts/Poppins-Thin.ttf'),
         url('../fonts/Poppins-ThinItalic.ttf'), url('../fonts/Poppins-Italic.ttf'), url('../fonts/Poppins-Light.ttf'),
-        url('../fonts/Poppins-LightItalic.ttf'), url('../fonts/Poppins-Medium.ttf'), url('../fonts/Poppins-MediumItalic.ttf'),
-        url('../fonts/Poppins-Regular.ttf'), url('../fonts/Poppins-SemiBold.ttf'), url('../fonts/Poppins-SemiBoldItalic.ttf');
+        url('../fonts/Poppins-LightItalic.ttf'), url('../fonts/Poppins-Medium.ttf'),
+        url('../fonts/Poppins-MediumItalic.ttf'), url('../fonts/Poppins-Regular.ttf'),
+        url('../fonts/Poppins-SemiBold.ttf'), url('../fonts/Poppins-SemiBoldItalic.ttf');
 }
 
 * {
@@ -18,13 +19,26 @@
 
 #header {
     height: 70px;
+    color: #fff;
     background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
 }
-#body {
+.header_container {
     width: 1200px;
-    height: 1000px;
-    margin: 0 auto;
 }
-#footer {
-    margin-bottom: 90px;
+
+.movies_category {
+    display: flex;
+    height: 100%;
+}
+
+.logo {
+    padding: 18px 17px 17px;
+    max-height: 100%;
+    text-align: center;
+}
+.logo .phimmoi_logo {
+    height: 100%;
+    object-fit: cover;
 }
