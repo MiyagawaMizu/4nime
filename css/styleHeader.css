@@ -19,26 +19,112 @@
 
 #header {
     height: 70px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     background-color: #0f0f0f;
     display: flex;
     justify-content: center;
 }
 .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 1200px;
 }
 
-.movies_category {
+.header_category {
     display: flex;
     height: 100%;
 }
 
-.logo {
+.header_logo {
     padding: 18px 17px 17px;
     max-height: 100%;
     text-align: center;
 }
-.logo .phimmoi_logo {
+.header_logo img {
     height: 100%;
     object-fit: cover;
+}
+
+.header_category--movie {
+    position: relative;
+    padding: 25px 20px;
+    line-height: 20px;
+}
+.header_category--movie:hover {
+    color: #408bea;
+}
+
+.header_category--icon {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.header_search {
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    color: white;
+    padding-right: 15px;
+    width: 340px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.header_search--text {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    min-height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    color: white;
+}
+.header_search--icon {
+    font-size: 14px;
+    font-weight: 900;
+}
+.header_search--icon:hover {
+    color: #408bea;
+}
+
+.header_category--movie:hover .header_category_list {
+    display: grid;
+}
+
+.header_category_list {
+    background: #000000;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 70px;
+    grid-template-columns: calc(500px / 3) calc(500px / 3) calc(500px / 3);
+    max-width: 500px;
+    padding-left: 0;
+}
+.header_category_list--item {
+    list-style-type: none;
+}
+
+.header_category_list--link {
+    /* display: flex; */
+    /* flex ko cho hidden text tràn thành ....  */
+    display: inline-block;
+    width: 100%;
+    /* align-items: center; */
+    text-decoration: none;
+    color: #7d7d7d;
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header_category_list--icon {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.header_category_list--link:hover {
+    color: #408bea;
 }
