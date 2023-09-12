@@ -1,0 +1,29 @@
+#body {
+    min-height: 100vh;
+    background: #424040;
+}
+
+#body_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.body_container_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b8b612;
+    background: #000;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.body_container_title--text {
+    margin: auto 0;
+    color: #989898;
+}
+.body_container_title--link {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
