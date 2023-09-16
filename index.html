@@ -124,17 +124,23 @@
                 </div>
                 <div class="movies_main">
                     <div class="movies_container">
-                        <div class="movies_scroll--horizon"></div>
-                        <div class="movies-hot"></div>
-                        <div class="movies_theaters"></div>
-                        <div class="movies_series"></div>
-                        <div class="single_movies"></div>
-                        <div class="news"></div>
+                        <div class="movies_container_scroll--horizon"></div>
+                        <div class="movies_container-hot"></div>
+                        <div class="movies_container_theaters"></div>
+                        <div class="movies_container_series"></div>
+                        <div class="movies_container_single_movies"></div>
+                        <div class="movies_container_news"></div>
                     </div>
-                    <aside>
-                        <div class="years"></div>
-                        <div class="movie_banner"></div>
-                        <div class="movies_list"></div>
+                    <aside class="movies_aside">
+                        <div class="movies_aside_years">
+                            <div class="movies_aside_years--title">
+                                Năm phát hành
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                            <div class="movies_aside_years--list"></div>
+                        </div>
+                        <div class="movies_aside_banner"></div>
+                        <div class="movies_aside_list"></div>
                     </aside>
                 </div>
             </div>
@@ -153,5 +159,6 @@
             </div>
         </footer>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="scripts/body.js"></script>
     </body>
 </html>

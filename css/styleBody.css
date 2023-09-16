@@ -1,3 +1,9 @@
+:root {
+    --text: #989898;
+    --text-light: #fff;
+    --theme-body: #151414;
+}
+
 #body {
     min-height: 100vh;
     background: #424040;
@@ -6,6 +12,8 @@
 #body_container {
     width: 1200px;
     margin: 0 auto;
+    background: var(--theme-body);
+    height: 100vh;
 }
 
 .body_container_title {
@@ -20,10 +28,53 @@
 
 .body_container_title--text {
     margin: auto 0;
-    color: #989898;
+    color: var(--text);
 }
 .body_container_title--link {
     list-style-type: none;
     text-decoration: none;
     color: inherit;
+}
+
+/* Container */
+.movies_container {
+    float: left;
+    width: calc(100% - 360px);
+}
+
+/* Aside */
+.movies_aside {
+    float: right;
+    width: 360px;
+    height: 100%;
+    padding: 30px;
+}
+
+.movies_aside_years {
+    padding: 10px 0;
+}
+.movies_aside_years--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.movies_aside_years--list {
+    padding: 3px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 7px;
+}
+.movies_aside_years--year {
+    color: var(--text);
+    width: 100%;
+    background: #0e0e0e;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 0;
 }
