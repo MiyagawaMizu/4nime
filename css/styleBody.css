@@ -2,6 +2,9 @@
     --text: #989898;
     --text-light: #fff;
     --theme-body: #151414;
+    --text-news: #d0d0d0;
+    --border-news: #272727;
+    --blue: #408bea;
 }
 
 #body {
@@ -40,6 +43,7 @@
 .movies_container {
     float: left;
     width: calc(100% - 360px);
+    padding: 20px;
 }
 
 /* Aside */
@@ -77,4 +81,102 @@
     font-size: 13px;
     font-weight: 700;
     padding: 4px 0;
+}
+
+.movies_aside_years--year:hover {
+    background: var(--blue);
+    color: white;
+}
+
+/* News */
+.movies_container_news {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid var(--border-news);
+    color: var(--text-news);
+}
+
+.movies_news_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movies_news_header--title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.movies_news_header--title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    width: 2px;
+    background-color: var(--blue);
+}
+
+.movies_news_header--more a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.movies_news_body {
+    padding: 0;
+    margin: 0;
+}
+
+.movies_news_body_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-news);
+}
+
+.movies_news_body_item-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.movies_news_body_item-date--d {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--blue);
+}
+
+.movies_news_body_item-date--m {
+    font-size: 10px;
+}
+
+.movies_news_body_item-content--header {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.movies_news_body_item-content--des {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
