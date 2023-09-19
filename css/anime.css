@@ -2,16 +2,29 @@
     /* box-shadow: 0px 0px 1px 0px white; */
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
 .movies_box {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 764px;
     height: 725px;
     /* justify-content: center; */
     margin-top: 10px;
+    align-content: flex-start;
     overflow: hidden;
     overflow-y: scroll;
-    align-content: flex-start;
 }
 
 .movie-card {
