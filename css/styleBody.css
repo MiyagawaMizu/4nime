@@ -10,6 +10,7 @@
 #container {
     min-height: 100vh;
     background: #424040;
+    padding-bottom: 100px;
 }
 
 #body_container {
