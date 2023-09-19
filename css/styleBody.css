@@ -13,6 +13,20 @@ body {
     --blue: #408bea;
 }
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #424040;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
 #container {
     min-height: 100vh;
     background: #424040;

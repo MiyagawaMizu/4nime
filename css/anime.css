@@ -3,7 +3,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: none;
+    background: #424040;
+}
+
+.movies_box::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
