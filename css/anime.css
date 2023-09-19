@@ -1,14 +1,8 @@
-* {
-    /* box-shadow: 0px 0px 1px 0px white; */
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
-    background-color: #1a1a1a;
-    color: white;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-    margin: 0px;
-    padding: 0px;
 }
 
 ::-webkit-scrollbar {
