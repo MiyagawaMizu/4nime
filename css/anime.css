@@ -2,6 +2,15 @@
     /* box-shadow: 0px 0px 1px 0px white; */
 }
 
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
 }
