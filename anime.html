@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="./css/styleHeader.css" />
+        <link rel="stylesheet" href="./css/styleBody.css" />
+        <link rel="stylesheet" href="./css/anime.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header">
+            <div class="header_container">
+                <div class="header_category">
+                    <div class="header_logo">
+                        <img src="./images/phimmoi.png" alt="" />
+                    </div>
+                    <div class="header_category--movie">Phimmoi</div>
+                    <div class="header_category--movie">Phim lẻ</div>
+                    <div class="header_category--movie">Phim bộ</div>
+                    <div class="header_category--movie">
+                        Thể loại
+                        <i class="header_category--icon fa-solid fa-caret-down fa-beat"></i>
+                        <!-- sau get element qua movies-genre để render dữ liệu -->
+                        <ul class="header_category_list movies-genre">
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Chiếu Rạp</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Chiến Tranh</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Viễn Tưởng</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Khoa Học</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Kinh Dị</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Tâm lý</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_category--movie">
+                        Quốc gia
+                        <i class="header_category--icon fa-solid fa-caret-down fa-beat"></i>
+                        <!-- sau get element qua movies-nation để render dữ liệu -->
+                        <ul class="header_category_list movies-nation">
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Nhật Bản</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Hàn Quốc</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Mĩ</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Trung Quốc</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Ấn Độ</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="mizu.html">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Nga Ngố aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_search">
+                    <input type="text" class="header_search--text" placeholder="Tìm kiếm..." />
+                    <i class="fa-solid fa-magnifying-glass header_search--icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Body -->
+        <div id="body">
+            <div id="body_container">
+                <div class="body_container_title">
+                    <p class="body_container_title--text">
+                        Truy cập <a href="phimmoi.com" class="body_container_title--link">Phimmoiy.com</a> nếu không vào
+                        được <strong>Phimmoi</strong>
+                    </p>
+                </div>
+                <div class="movies_main">
+                    <div class="movies_container">
+                        <div class="movies_container_scroll--horizon"></div>
+                        <div class="movies_container-hot"></div>
+                        <div class="movies_container_theaters"></div>
+                        <div class="movies_container_series"></div>
+                        <div class="movies_container_single_movies"></div>
+                        <!-- News -->
+                        <div class="movies_container_news">
+                            <div class="movies_news_header">
+                                <div class="movies_news_header--title">Anime</div>
+                                <!-- <div class="movies_news_header--more"><a href="#">Xem thêm</a></div> -->
+                            </div>
+                            <div class="movies_box" id="movies">
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="movies_aside">
+                        <!-- List years movies -->
+                        <div class="movies_aside_years">
+                            <div class="movies_aside_years--title">
+                                Năm phát hành
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                            <div class="movies_aside_years--list"></div>
+                        </div>
+                        <div class="movies_aside_banner"></div>
+                        <div class="movies_aside_list"></div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </footer>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./scripts/body.js"></script>
+        <script src="./scripts/anime.js"></script>
+    </body>
+</html>
