@@ -7,7 +7,7 @@
     --blue: #408bea;
 }
 
-#body {
+#container {
     min-height: 100vh;
     background: #424040;
 }
@@ -16,7 +16,6 @@
     width: 1200px;
     margin: 0 auto;
     background: var(--theme-body);
-    height: 100vh;
 }
 
 .body_container_title {
@@ -40,18 +39,24 @@
 }
 
 /* Container */
+
+.movies_main {
+    display: flex;
+    border-bottom: 1px solid var(--border-news);
+}
+
 .movies_container {
-    float: left;
     width: calc(100% - 360px);
     padding: 20px;
+    height: 100%;
+    border-right: 1px solid var(--border-news);
 }
 
 /* Aside */
 .movies_aside {
-    float: right;
     width: 360px;
-    height: 100%;
-    padding: 30px;
+    padding: 20px;
+    height: inherit;
 }
 
 .movies_aside_years {

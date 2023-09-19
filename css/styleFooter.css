@@ -1,0 +1,41 @@
+:root {
+    --text: #989898;
+    --text-light: #fff;
+    --theme-body: #151414;
+    --text-news: #d0d0d0;
+    --border-news: #272727;
+    --blue: #408bea;
+}
+
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    background: var(--theme-body);
+    padding-bottom: 200px;
+    color: var(--text);
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: auto 220px 220px 220px;
+}
+
+.footer_main_img {
+    width: 200px;
+    height: 42px;
+}
+.footer_main_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer_list--list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_list--item {
+    color: var(--blue);
+}
