@@ -7,7 +7,7 @@ Only html, css anime streaming website for school project
 3. Có cài **bootstrap** để tiện xử lý
 4. Tối ưu việc tái sử dụng components
 5. Mỗi 1 phần code nên chú thích vô để dễ đọc như sau:
-
+   
 ```html
 <html>
     //header
@@ -20,9 +20,6 @@ Only html, css anime streaming website for school project
     </body>
 </html>
 ```
-=======
->>>>>>> 744f5b4730130782f9f487d08073e7a58e8d2a89
-
 ## 💼 Contributors
 <a href="https://github.com/MiyagawaMizu/4nime/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=MiyagawaMizu/4nime" />
