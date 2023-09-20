@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- embed content start-->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Movie</title>
+		<meta
+			name="description"
+			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
+		<meta
+			property="og:title"
+			content="Phimmoi | Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh. | Xem phim mới | Phim hay | Phim chiếu rạp" />
+		<meta
+			property="og:description"
+			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
+		<meta
+			property="og:image"
+			content="https://cdn.discordapp.com/attachments/953841823338618900/1154023006226620477/monke.gif" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Phimmoi" />
+		<meta
+			property="twitter:title"
+			content="Phimmoi | Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh. | Xem phim mới | Phim hay | Phim chiếu rạp" />
+		<meta
+			property="twitter:description"
+			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
+		<meta
+			property="twitter:image"
+			content="https://cdn.discordapp.com/attachments/953841823338618900/1154023006226620477/monke.gif" />
+		<meta
+			property="twitter:image:alt"
+			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta name="keywords" content="phimmoi, phimmoiyyy" />
+		<meta name="language" content="Vietnamese" />
+		<meta
+			name="author"
+			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
+		<!-- embed content end -->
 		<link
 			rel="stylesheet"
 			href="node_modules/bootstrap/dist/css/bootstrap.css" />
@@ -14,6 +47,8 @@
 		<link rel="stylesheet" href="./css/styleBody.css" />
 		<link rel="stylesheet" href="./css/styleFooter.css" />
 		<link rel="stylesheet" href="./css/anime.css" />
+		<link rel="icon" href="./images/favicon.ico" />
+		<title>phimmoi.net</title>
 	</head>
 	<body>
 		<!-- Header -->
@@ -21,9 +56,10 @@
 			<div class="header_container">
 				<div class="header_category">
 					<div class="header_logo">
+						<a href="./index"><img src="./images/logo.png" alt="" /></a>
 						<img src="./images/phimmoi.png" alt="" />
 					</div>
-					<div class="header_category--movie">Phimmoi</div>
+					<a href="./index.html" class="header_category--movie">Phimmoi</a>
 					<div class="header_category--movie">Phim lẻ</div>
 					<div class="header_category--movie">Phim bộ</div>
 					<div class="header_category--movie">
@@ -140,8 +176,11 @@
 				<div class="body_container_title">
 					<p class="body_container_title--text">
 						Truy cập
-						<a href="phimmoi.com" class="body_container_title--link"
-							>Phimmoiy.com</a
+						<a
+							href="https://phimmoiyyy.net"
+							class="body_container_title--link"
+							target="_blank"
+							>Phimmoiyyy.net</a
 						>
 						nếu không vào được <strong>Phimmoi</strong>
 					</p>
@@ -157,8 +196,7 @@
 						<div class="movies_container_news">
 							<div class="movies_news_header">
 								<div class="movies_news_header--title">Anime</div>
-								<div class="movies_news_header--more">
-								</div>
+								<div class="movies_news_header--more"></div>
 							</div>
 							<div class="movies_box" id="movies"></div>
 						</div>

@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 764px;
-    height: 725px;
+    height: 755px;
     /* justify-content: center; */
     margin-top: 10px;
     align-content: flex-start;
@@ -38,6 +38,7 @@
     width: 130px;
     height: 185px;
     object-fit: fill;
+    border-radius: 5px;
 }
 
 /* .movie-poster {

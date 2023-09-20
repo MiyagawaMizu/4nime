@@ -45,6 +45,7 @@
     font-size: 20px;
     border-left: 3px solid var(--blue);
     padding: 4px 10px;
+    margin-left: 10px;
 }
 
 .click_scroll {
@@ -80,8 +81,21 @@
     position: relative;
 }
 
-.poster .featu {
+
+
+.poster .featu, .poster .topic--film {
     position: absolute;
+
+    font-size: 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+
+    z-index: 2;
+}
+
+.poster .featu {
     top: 0;
     left: 0;
 
@@ -89,29 +103,16 @@
     background: var(--red);
     color: var(--text-light);
     padding: 2px 5px;
-    font-size: 10px;
-    text-transform: uppercase;
-    line-height: 20px;
-    font-weight: 500;
-    text-align: center;
-    z-index: 2;
 
 }
 
 .poster .topic--film {
-    position: absolute;
     bottom: 7px;
     left: 7px;
 
-    font-size: 10px;
     background-color: var(--blue);
     color: var(--text-light);
     width: 96px;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    line-height: 20px;
-    z-index: 2;
 }
 
 .poster .play {
@@ -164,12 +165,10 @@
 }
 
 
-
-
 /* keyframes */
 .play {
     opacity: 0;
-    animation: fadeIn 2s forwards; /* Thời gian và tên animation */
+    animation: fadeIn 2s forwards;
   }
   
   @keyframes fadeIn {
