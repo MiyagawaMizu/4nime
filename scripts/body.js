@@ -1,16 +1,4 @@
 // render Years
-// let listYear = document.querySelector('.movies_aside_years--list')
-
-// const renderListYear = () => {
-//     for (let i = 2023; i >= 2009; i--) {
-//         const Year = document.createElement('div')
-//         Year.classList.add('movies_aside_years--year')
-//         Year.textContent = i
-//         listYear.appendChild(Year)
-//     }
-// }
-// renderListYear()
-
 const listYear = document.querySelector(".movies_aside_years--list");
 
 const renderListYear = () => {
@@ -28,6 +16,33 @@ const renderListYear = () => {
 	}
 };
 renderListYear();
+
+// Tạo nút "Tất cả"
+const allButton = document.createElement("div");
+allButton.classList.add("movies_aside_years--year");
+allButton.textContent = "Tất cả";
+
+// Add a click event listener to the "Tất cả" button
+allButton.addEventListener("click", () => {
+	filterMoviesByYear("all");
+});
+
+listYear.appendChild(allButton);
+
+// Hàm lọc phim theo năm
+function filterMoviesByYear(selectedYear) {
+	let filteredMovies;
+
+	if (selectedYear === "all") {
+		filteredMovies = movies;
+	} else {
+		filteredMovies = movies.filter(
+			(movie) => movie.year.toString() === selectedYear.toString()
+		);
+	}
+
+	displayMovies(filteredMovies);
+}
 
 // News
 

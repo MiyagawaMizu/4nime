@@ -190,35 +190,51 @@
 					<div class="movies_container">
 						<div class="movies_container_scroll--horizon"></div>
 
-                        <div class="movies_container-hot">
-                            <div class="movies_hot--title">
-                                <h2>Phim mới nổi bật</h2>
-                                <div class="click_scroll">
-                                    <ion-icon class="click_scroll--left" name="caret-back-outline"></ion-icon>
-                                    <ion-icon class="click_scroll--right" name="caret-forward-outline"></ion-icon>
-                                </div>
-                            </div>
-                            <div id="movies_hot_render" class="list_film--hot">
-                                <div class="poster">
-                                    <div class="data--top">
-                                        <span class="featu">Nổi bật</span>
-                                        <span class="topic--film">VIETSUB</span>
-                                        <svg class="play" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                                        </svg>
-                                        <a href="" class="link">
-                                            <img class="img-poster" src="./images/image(1).jpg" alt="Errol Server">
-                                        </a>
-                                    </div>
-                                    <div class="data--featu">
-                                        <a class="name--film" href="">Herrscher of Fallen</a>
-                                        <span class="year">2023</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
+						<div class="movies_container-hot">
+							<div class="movies_hot--title">
+								<h2>Phim mới nổi bật</h2>
+								<div class="click_scroll">
+									<ion-icon
+										class="click_scroll--left"
+										name="caret-back-outline"></ion-icon>
+									<ion-icon
+										class="click_scroll--right"
+										name="caret-forward-outline"></ion-icon>
+								</div>
+							</div>
+							<div id="movies_hot_render" class="list_film--hot">
+								<!-- <article class="poster">
+									<div class="data--top">
+										<svg
+											class="play"
+											xmlns="http://www.w3.org/2000/svg"
+											height="1em"
+											viewBox="0 0 384 512">
+											<path
+												d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+										</svg>
+										<span class="featu">Nổi bật</span>
+										<span class="topic--film">VIETSUB</span>
+										<a href="" class="link">
+											<img
+												class="img-poster"
+												src="./images/image(1).jpg"
+												alt="Errol Server" />
+										</a>
+									</div>
+									<div class="data--featu">
+										<a class="name--film" href="">Herrscher of Fallen</a>
+										<span class="year">2023</span>
+									</div>
+								</article> -->
+							</div>
+						</div>
+						<div class="movies_container_news">
+							<div class="movies_news_header">
+								<div class="movies_news_header--title">Anime mới nhất</div>
+							</div>
+						</div>
+						<div class="movies_box" id="movies"></div>
 						<div class="movies_container_theaters"></div>
 						<div class="movies_container_series"></div>
 						<div class="movies_container_single_movies"></div>
@@ -319,10 +335,15 @@
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="./scripts/body.js"></script>
 		<script src="./scripts/footer.js"></script>
-		<script src="./scripts/topic-list.js"></script>
+		<script src="./scripts/topic-list-mizu.js"></script>
+		<script src="./scripts/anime.js"></script>
 
-        <!-- icon  -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<!-- icon  -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>

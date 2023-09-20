@@ -63,14 +63,13 @@
 
 .poster {
     min-width: 160px;
-    height: 280px;
+    height: 250px;
     padding: 10px;
-
     display: flex;
     flex-direction: column;
-
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 30px;
 }
 
 /* top */
@@ -78,7 +77,7 @@
     width: 140px;
     height: 196px;
     overflow: hidden;
-
+    border-radius: 4px;
     position: relative;
 }
 
@@ -87,34 +86,31 @@
 .poster .featu,
 .poster .topic--film {
     position: absolute;
-
     font-size: 10px;
     line-height: 20px;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-
     z-index: 2;
 }
 
 .poster .featu {
     top: 0;
     left: 0;
-
     width: 62px;
     background: var(--red);
     color: var(--text-light);
     padding: 2px 5px;
-
+    border-radius: 0px 0 5px 0px;
 }
 
 .poster .topic--film {
     bottom: 7px;
     left: 7px;
-
     background-color: var(--blue);
     color: var(--text-light);
     width: 96px;
+    border-radius: 3px;
 }
 
 .poster .play {
@@ -135,6 +131,7 @@
 
 .poster img {
     width: 100%;
+    object-fit: cover;
 }
 
 .data--top:hover img {
@@ -142,8 +139,8 @@
     transition: all 0.5s ease-in-out;
     backdrop-filter: blur(50px);
     opacity: 0.2;
-
     z-index: 1;
+    filter: blur(2px);
 }
 
 /* featu/bottom */

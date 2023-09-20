@@ -2,7 +2,7 @@ const listMoviesHot = [
 	{
 		featu: "Simple",
 		pictureLink: "./images/image(2).jpg",
-		topicFilm: "HR VIETSUB",
+		topicFilm: "HDR VIETSUB",
 		nameFilm: "Herrscher of NER",
 		year: 2023,
 	},
@@ -64,36 +64,66 @@ const listMoviesHot = [
 	},
 ];
 
-// Scan/render list film hot
-listMoviesHot.forEach((movie) => {
-	const movieContainer = document.createElement("article");
-	movieContainer.classList.add("poster");
+// Hiển thị danh sách phim ban đầu
+displayMovies(listMoviesHot);
 
-	// Tạo nội dung HTML cho mỗi phần tử phim
-	const movieHTML = `
-        <div class="data--top">
-        <svg class="play" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-        </svg>
-            <span class="featu">${movie.featu}</span>
-            <span class="topic--film">${movie.topicFilm}</span>
-            <a href="" class="link">
-                <img class="img-poster" src="${movie.pictureLink}" alt="Errol Server">
-            </a>
-        </div>
-        <div class="data--featu">
-            <a class="name--film" href="">${movie.nameFilm}</a>
-            <span class="year">${movie.year}</span>
-        </div>
-    `;
-
-	// Gắn nội dung HTML vào phần tử container
-	movieContainer.innerHTML = movieHTML;
-
-	// Thêm phần tử container vào danh sách phim trong HTML
+// Hàm hiển thị danh sách phim
+function displayMovies(movies) {
 	const moviesHotRender = document.getElementById("movies_hot_render");
-	moviesHotRender.appendChild(movieContainer);
-});
+	moviesHotRender.innerHTML = "";
+
+	movies.forEach((movie) => {
+		const movieContainer = document.createElement("article");
+		movieContainer.classList.add("poster");
+
+		const movieDataTop = document.createElement("div");
+		movieDataTop.classList.add("data--top");
+		movieDataTop.innerHTML = `<svg
+											class="play" id="play"
+											xmlns="http://www.w3.org/2000/svg"
+											height="1em"
+											viewBox="0 0 384 512">
+											<path
+												d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+										</svg>`;
+
+		const movieFeatu = document.createElement("span");
+		movieFeatu.classList.add("featu");
+		movieFeatu.textContent = movie.featu;
+
+		const movieTopicFilm = document.createElement("span");
+		movieTopicFilm.classList.add("topic--film");
+		movieTopicFilm.textContent = movie.topicFilm;
+
+		const movieLink = document.createElement("a");
+		movieLink.classList.add("link");
+
+		const moviePoster = document.createElement("img");
+		moviePoster.classList.add("img-poster");
+		moviePoster.src = movie.pictureLink;
+
+		const movieDataFeatu = document.createElement("div");
+		movieDataFeatu.classList.add("data--featu");
+
+		const movieNameFilm = document.createElement("a");
+		movieNameFilm.classList.add("name--film");
+		movieNameFilm.textContent = movie.nameFilm;
+
+		const movieYear = document.createElement("span");
+		movieYear.classList.add("year");
+		movieYear.textContent = movie.year;
+
+		moviesHotRender.appendChild(movieContainer);
+		movieContainer.appendChild(movieDataTop);
+		movieDataTop.appendChild(movieFeatu);
+		movieDataTop.appendChild(movieTopicFilm);
+		movieDataTop.appendChild(movieLink);
+		movieLink.appendChild(moviePoster);
+		movieContainer.appendChild(movieDataFeatu);
+		movieDataFeatu.appendChild(movieNameFilm);
+		movieDataFeatu.appendChild(movieYear);
+	});
+}
 
 // Click scroll-x
 document.addEventListener("DOMContentLoaded", function () {
