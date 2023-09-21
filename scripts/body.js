@@ -1,4 +1,4 @@
-// render Years
+// render Years list in the sidebar
 const listYear = document.querySelector(".movies_aside_years--list");
 
 const renderListYear = () => {
