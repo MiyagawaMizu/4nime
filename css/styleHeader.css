@@ -99,6 +99,7 @@
 
 .header_category--movie:hover .header_category_list {
     display: grid;
+    z-index: 9999;
 }
 
 .header_category_list {
