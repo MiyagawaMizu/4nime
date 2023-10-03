@@ -80,3 +80,14 @@ const renderNews = () => {
 	}
 };
 renderNews();
+
+// preview link
+const anchors = document.getElementsByTagName("a");
+
+for (let i = 0; i < anchors.length; i++) {
+	const anchor = anchors[i];
+	const href = anchor.getAttribute("href");
+	if (href) {
+		anchor.setAttribute("title", href);
+	}
+}
