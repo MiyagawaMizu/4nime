@@ -12,6 +12,27 @@ const movieData = [
 		rating: "10.0",
 		year: "2023",
 	},
+	{
+		title: "Castlevania: Nocturne",
+		imageUrl:
+			"https://phimmoiyyy.net/wp-content/uploads/2023/09/Castlevania-Nocturne.jpg",
+		rating: "10.0",
+		year: "2023",
+	},
+	{
+		title: "Castlevania: Nocturne",
+		imageUrl:
+			"https://phimmoiyyy.net/wp-content/uploads/2023/09/Castlevania-Nocturne.jpg",
+		rating: "10.0",
+		year: "2023",
+	},
+	{
+		title: "Castlevania: Nocturne",
+		imageUrl:
+			"https://phimmoiyyy.net/wp-content/uploads/2023/09/Castlevania-Nocturne.jpg",
+		rating: "10.0",
+		year: "2023",
+	},
 	// Thêm các mục phim khác tại đây
 ];
 
