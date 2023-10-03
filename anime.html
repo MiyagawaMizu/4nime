@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- embed content start-->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
+		<!-- embed content start-->
 		<meta
 			property="og:title"
 			content="Phimmoi | Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh. | Xem phim mới | Phim hay | Phim chiếu rạp" />
+		<meta
+			name="description"
+			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
 		<meta
 			property="og:description"
 			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
@@ -18,19 +18,6 @@
 			content="https://cdn.discordapp.com/attachments/953841823338618900/1154023006226620477/monke.gif" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Phimmoi" />
-		<meta
-			property="twitter:title"
-			content="Phimmoi | Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh. | Xem phim mới | Phim hay | Phim chiếu rạp" />
-		<meta
-			property="twitter:description"
-			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
-		<meta
-			property="twitter:image"
-			content="https://cdn.discordapp.com/attachments/953841823338618900/1154023006226620477/monke.gif" />
-		<meta
-			property="twitter:image:alt"
-			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
-		<meta property="twitter:card" content="summary_large_image" />
 		<meta name="keywords" content="phimmoi, phimmoiyyy" />
 		<meta name="language" content="Vietnamese" />
 		<meta
@@ -42,11 +29,15 @@
 			href="node_modules/bootstrap/dist/css/bootstrap.css" />
 		<link
 			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+		<link
+			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<link rel="stylesheet" href="./css/styleHeader.css" />
 		<link rel="stylesheet" href="./css/styleBody.css" />
 		<link rel="stylesheet" href="./css/styleFooter.css" />
-		<link rel="stylesheet" href="./css/anime.css" />
+		<link rel="stylesheet" href="./css/movie_type.css" />
+		<link rel="stylesheet" href="./css/styleMoviesMain.css" />
 		<link rel="icon" href="./images/favicon.ico" />
 		<title>phimmoi.net</title>
 	</head>
@@ -188,18 +179,13 @@
 				<div class="movies_main">
 					<div class="movies_container">
 						<div class="movies_container_scroll--horizon"></div>
-						<div class="movies_container-hot"></div>
-						<div class="movies_container_theaters"></div>
-						<div class="movies_container_series"></div>
-						<div class="movies_container_single_movies"></div>
-						<!-- News -->
-						<div class="movies_container_news">
-							<div class="movies_news_header">
-								<div class="movies_news_header--title">Anime</div>
-								<div class="movies_news_header--more"></div>
-							</div>
-							<div class="movies_box" id="movies"></div>
+						<div class="big-title">
+							<h1>Phim Anime</h1>
 						</div>
+						<div class="movies_hot--title">
+							<h2>Anime mới nhất</h2>
+						</div>
+						<div class="movies_box" id="movies"></div>
 					</div>
 					<aside class="movies_aside">
 						<!-- List years movies -->
@@ -210,7 +196,15 @@
 							</div>
 							<div class="movies_aside_years--list"></div>
 						</div>
-						<div class="movies_aside_banner"></div>
+						<a
+							href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+							class="movies_aside_banner">
+							<img
+								src="https://image.tmdb.org/t/p/w500/whZL1Q3Alb3yQJfptJCoY4AmyyA.jpg"
+								alt="" />
+							<h3>quái vật bể nước</h3>
+							<p>2023</p>
+						</a>
 						<div class="movies_aside_list"></div>
 					</aside>
 				</div>
@@ -287,6 +281,15 @@
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="./scripts/body.js"></script>
 		<script src="./scripts/footer.js"></script>
-		<script src="./scripts/anime.js"></script>
+		<script src="./scripts/topic-list-mizu.js"></script>
+		<script src="./scripts/movie_type.js"></script>
+		<script src="./scripts/aside_movie_card.js"></script>
+		<!-- icon  -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
