@@ -40,7 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 805px;
-    height: 620px;
+    /* height: 620px; */
     /* justify-content: center; */
     align-content: flex-start;
     overflow: hidden;
