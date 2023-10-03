@@ -141,22 +141,17 @@ body {
 .movies_aside_banner h3 {
     position: absolute;
     font-size: 12px;
+    bottom: 25px;
+    left: 10px;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    margin: 0px;
 }
 
 .movies_aside_banner p {
     position: absolute;
     font-size: 12px;
-}
-
-.movies_aside_banner h3 {
-    bottom: 20px;
-    left: 10px;
-    font-weight: 600;
-    color: white;
-    text-transform: capitalize;
-}
-
-.movies_aside_banner p {
     bottom: 10px;
     left: 10px;
     color: var(--text);
@@ -184,7 +179,8 @@ body {
     background-color: #000000;
 }
 
-.movie_aside_card:hover h3, .movie_aside_card:hover p {
+.movie_aside_card:hover h3,
+.movie_aside_card:hover p {
     color: white;
 }
 
