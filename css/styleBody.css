@@ -138,8 +138,12 @@ body {
     object-fit: cover;
 }
 
-.movies_aside_banner h3,
-p {
+.movies_aside_banner h3 {
+    position: absolute;
+    font-size: 12px;
+}
+
+.movies_aside_banner p {
     position: absolute;
     font-size: 12px;
 }
@@ -173,11 +177,12 @@ p {
     background-color: #0e0e0e;
     text-decoration: none;
     color: var(--text);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .movie_aside_card:hover {
     background-color: #000000;
+    color: white;
 }
 
 .movie_aside_card:hover .bi-star-fill {
@@ -188,21 +193,20 @@ p {
     width: 80px;
     height: 120px;
     display: flex;
-    fit-content: cover;
+    /* fit-content: cover; */
 }
 
 .movie_aside_card_content {
     padding-left: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .movie_aside_card_content h3 {
     padding-top: 10px;
     font-size: 13px;
     font-weight: bold;
-    color: white;
+    color: #bfbfbf;
 }
 
 .aside_row {
@@ -212,11 +216,12 @@ p {
 }
 
 .aside_row p {
-    margin: 0px 60px;
+    margin: 0px 5px;
 }
 
 .movie_aside-rating {
-    width: 54px;
+    /* width: 54px; */
+    width: fit-content;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -224,7 +229,7 @@ p {
     border-radius: 5px;
 }
 
-i {
+.movie_aside-rating i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,7 +238,7 @@ i {
 }
 
 .movie_aside-rating p {
-    padding-left: 25px;
+    padding-right: 5px;
     color: var(--text);
     margin: 0px;
 }
