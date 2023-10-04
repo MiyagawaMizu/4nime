@@ -139,3 +139,22 @@
 .header_category_list--link:hover {
     color: #408bea;
 }
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    animation: truot 0.5s linear;
+}
+
+@keyframes truot {
+    from {
+        transform: translateY(-35px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
