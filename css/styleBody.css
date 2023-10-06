@@ -194,6 +194,10 @@ body {
     display: flex;
     /* fit-content: cover; */
 }
+.aside_card-img img {
+    width: 100%;
+    fit-content: cover;
+}
 
 .movie_aside_card_content {
     padding-left: 10px;

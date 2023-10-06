@@ -1,295 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- embed content start-->
-		<meta
-			property="og:title"
-			content="Phimmoi | Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh. | Xem phim mới | Phim hay | Phim chiếu rạp" />
-		<meta
-			name="description"
-			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
-		<meta
-			property="og:description"
-			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
-		<meta
-			property="og:image"
-			content="https://cdn.discordapp.com/attachments/953841823338618900/1154023006226620477/monke.gif" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Phimmoi" />
-		<meta name="keywords" content="phimmoi, phimmoiyyy" />
-		<meta name="language" content="Vietnamese" />
-		<meta
-			name="author"
-			content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh." />
-		<!-- embed content end -->
-		<link
-			rel="stylesheet"
-			href="node_modules/bootstrap/dist/css/bootstrap.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-		<link rel="stylesheet" href="./css/styleHeader.css" />
-		<link rel="stylesheet" href="./css/styleBody.css" />
-		<link rel="stylesheet" href="./css/styleFooter.css" />
-		<link rel="stylesheet" href="./css/movie_type.css" />
-		<link rel="stylesheet" href="./css/styleMoviesMain.css" />
-		<link rel="icon" href="./images/favicon.ico" />
-		<title>phimmoi.net</title>
-	</head>
-	<body>
-		<!-- Header -->
-		<div id="header">
-			<div class="header_container">
-				<div class="header_category">
-					<div class="header_logo">
-						<a href="./index"><img src="./images/logo.png" alt="" /></a>
-						<img src="./images/phimmoi.png" alt="" />
-					</div>
-					<a href="./index.html" class="header_category--movie">Phimmoi</a>
-					<div class="header_category--movie">Phim lẻ</div>
-					<div class="header_category--movie">Phim bộ</div>
-					<div class="header_category--movie">
-						Thể loại
-						<i class="header_category--icon fa-solid fa-caret-down fa-beat"></i>
-						<!-- sau get element qua movies-genre để render dữ liệu -->
-						<ul class="header_category_list movies-genre">
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Chiếu Rạp</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Chiến Tranh</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Viễn Tưởng</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Khoa Học</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Kinh Dị</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Tâm lý</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="header_category--movie">
-						Quốc gia
-						<i class="header_category--icon fa-solid fa-caret-down fa-beat"></i>
-						<!-- sau get element qua movies-nation để render dữ liệu -->
-						<ul class="header_category_list movies-nation">
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Nhật Bản</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Hàn Quốc</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Mĩ</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Trung Quốc</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Ấn Độ</a
-								>
-							</li>
-							<li class="header_category_list--item">
-								<a class="header_category_list--link" href="./anime">
-									<i
-										class="fa-solid fa-caret-right header_category_list--icon"></i>
-									Phim Nga Ngố</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="header_search">
-					<input
-						type="text"
-						class="header_search--text"
-						placeholder="Tìm kiếm..." />
-					<i class="fa-solid fa-magnifying-glass header_search--icon"></i>
-				</div>
-			</div>
-		</div>
-		<!-- Body -->
-		<div id="container">
-			<div id="body_container">
-				<div class="body_container_title">
-					<p class="body_container_title--text">
-						Truy cập
-						<a
-							href="https://phimmoiyyy.net"
-							class="body_container_title--link"
-							target="_blank"
-							>Phimmoiyyy.net</a
-						>
-						nếu không vào được <strong>Phimmoi</strong>
-					</p>
-				</div>
-				<div class="movies_main">
-					<div class="movies_container">
-						<div class="movies_container_scroll--horizon"></div>
-						<div class="big-title">
-							<h1>Phim Anime</h1>
-						</div>
-						<div class="movies_hot--title">
-							<h2>Anime mới nhất</h2>
-						</div>
-						<div class="movies_box" id="movies"></div>
-					</div>
-					<aside class="movies_aside">
-						<!-- List years movies -->
-						<div class="movies_aside_years">
-							<div class="movies_aside_years--title">
-								Năm phát hành
-								<i class="fa-solid fa-caret-down"></i>
-							</div>
-							<div class="movies_aside_years--list"></div>
-						</div>
-						<a
-							href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-							class="movies_aside_banner">
-							<img
-								src="https://image.tmdb.org/t/p/w500/whZL1Q3Alb3yQJfptJCoY4AmyyA.jpg"
-								alt="" />
-							<h3>quái vật bể nước</h3>
-							<p>2023</p>
-						</a>
-						<div class="movies_aside_list"></div>
-					</aside>
-				</div>
-			</div>
-			<!-- Footer -->
-			<footer id="footer">
-				<div class="footer_content">
-					<div class="footer_main">
-						<div class="footer_main_img">
-							<img src="./images/footer-header.png" alt="" />
-						</div>
-						<div class="footer_main_text">
-							<span>Phimmoi</span> - Trang xem phim Online với giao diện mới
-							được bố trí và thiết kế thân thiện với người dùng. Nguồn phim được
-							tổng hợp từ các website lớn với đa dạng các đầu phim và thể loại
-							vô cùng phong phú.
-						</div>
-					</div>
-					<div class="footer_list">
-						<div class="footer_list--title">Phim mới</div>
-						<ul class="footer_list--list">
-							<li class="footer_list--item">Phim Khoa Học</li>
-							<li class="footer_list--item">Phim Kinh Dị</li>
-							<li class="footer_list--item">Phim Viễn Tưởng</li>
-							<li class="footer_list--item">Phim Chiếu Rạp</li>
-							<li class="footer_list--item">Phim Hành Động</li>
-						</ul>
-					</div>
-					<div class="footer_list">
-						<div class="footer_list--title">Phim mới</div>
-						<ul class="footer_list--list">
-							<li class="footer_list--item">Phim Khoa Học</li>
-							<li class="footer_list--item">Phim Kinh Dị</li>
-							<li class="footer_list--item">Phim Viễn Tưởng</li>
-							<li class="footer_list--item">Phim Chiếu Rạp</li>
-							<li class="footer_list--item">Phim Hành Động</li>
-						</ul>
-					</div>
-					<div class="footer_list">
-						<div class="footer_list--title">Phim mới</div>
-						<ul class="footer_list--list">
-							<li class="footer_list--item">Phim Khoa Học</li>
-							<li class="footer_list--item">Phim Kinh Dị</li>
-							<li class="footer_list--item">Phim Viễn Tưởng</li>
-							<li class="footer_list--item">Phim Chiếu Rạp</li>
-							<li class="footer_list--item">Phim Hành Động</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer_banner">
-					<div class="footer_banner_right">© Phimmoi</div>
-					<div class="footer_banner_left">
-						<ul class="footer_banner_left--icon">
-							<li class="footer_banner_left--icon--item">
-								<i class="fa-brands fa-facebook"></i>
-							</li>
-							<li class="footer_banner_left--icon--item">
-								<i class="fa-brands fa-telegram"></i>
-							</li>
-							<li class="footer_banner_left--icon--item">
-								<i class="fa-brands fa-twitter"></i>
-							</li>
-							<li class="footer_banner_left--icon--item">
-								<i class="fa-brands fa-youtube"></i>
-							</li>
-							<li class="footer_banner_left--icon--item show-to-top">
-								<i class="fa-solid fa-caret-up"></i>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="./scripts/body.js"></script>
-		<script src="./scripts/footer.js"></script>
-		<script src="./scripts/topic-list-mizu.js"></script>
-		<script src="./scripts/movie_type.js"></script>
-		<script src="./scripts/aside_movie_card.js"></script>
-		<!-- icon  -->
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- embed content start-->
+        <meta
+            property="og:title"
+            content="Phimmoi | Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh. | Xem phim mới | Phim hay | Phim chiếu rạp"
+        />
+        <meta
+            name="description"
+            content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh."
+        />
+        <meta
+            property="og:description"
+            content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh."
+        />
+        <meta
+            property="og:image"
+            content="https://cdn.discordapp.com/attachments/953841823338618900/1154023006226620477/monke.gif"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Phimmoi" />
+        <meta name="keywords" content="phimmoi, phimmoiyyy" />
+        <meta name="language" content="Vietnamese" />
+        <meta
+            name="author"
+            content="Phimmoi - Phim mới (phimmoi.net, phimmoizz) với giao diện mới thân thiện, trực quan dễ sử dụng, hơn 100000+ bộ phim fullHD vietsub thuyết minh."
+        />
+        <!-- embed content end -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="./css/styleHeader.css" />
+        <link rel="stylesheet" href="./css/styleBody.css" />
+        <link rel="stylesheet" href="./css/styleFooter.css" />
+        <link rel="stylesheet" href="./css/movie_type.css" />
+        <link rel="stylesheet" href="./css/styleMoviesMain.css" />
+        <link rel="icon" href="./images/favicon.ico" />
+        <title>phimmoi.net</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header">
+            <div class="header_container">
+                <div class="header_category">
+                    <div class="header_logo">
+                        <a href="./index"><img src="./images/logo.png" alt="" /></a>
+                        <img src="./images/phimmoi.png" alt="" />
+                    </div>
+                    <a href="./index.html" class="header_category--movie">Phimmoi</a>
+                    <div class="header_category--movie">Phim lẻ</div>
+                    <div class="header_category--movie">Phim bộ</div>
+                    <div class="header_category--movie">
+                        Thể loại
+                        <i class="header_category--icon fa-solid fa-caret-down fa-beat"></i>
+                        <!-- sau get element qua movies-genre để render dữ liệu -->
+                        <ul class="header_category_list movies-genre">
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Chiếu Rạp</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Chiến Tranh</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Viễn Tưởng</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Khoa Học</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Kinh Dị</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Tâm lý</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header_category--movie">
+                        Quốc gia
+                        <i class="header_category--icon fa-solid fa-caret-down fa-beat"></i>
+                        <!-- sau get element qua movies-nation để render dữ liệu -->
+                        <ul class="header_category_list movies-nation">
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Nhật Bản</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Hàn Quốc</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Mĩ</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Trung Quốc</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Ấn Độ</a
+                                >
+                            </li>
+                            <li class="header_category_list--item">
+                                <a class="header_category_list--link" href="./anime">
+                                    <i class="fa-solid fa-caret-right header_category_list--icon"></i>
+                                    Phim Nga Ngố</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_search">
+                    <input type="text" class="header_search--text" placeholder="Tìm kiếm..." />
+                    <i class="fa-solid fa-magnifying-glass header_search--icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Body -->
+        <div id="container">
+            <div id="body_container">
+                <div class="body_container_title">
+                    <p class="body_container_title--text">
+                        Truy cập
+                        <a href="https://phimmoiyyy.net" class="body_container_title--link" target="_blank"
+                            >Phimmoiyyy.net</a
+                        >
+                        nếu không vào được <strong>Phimmoi</strong>
+                    </p>
+                </div>
+                <div class="movies_main">
+                    <div class="movies_container">
+                        <div class="movies_container_scroll--horizon"></div>
+                        <div class="big-title">
+                            <h1>Phim Anime</h1>
+                        </div>
+                        <div class="movies_hot--title">
+                            <h2>Anime mới nhất</h2>
+                        </div>
+                        <div class="movies_box" id="movies"></div>
+                        <ul class="list-page">
+                            <!-- <li class="active">1</li>
+							<li>2</li>
+							<li>3</li> -->
+                        </ul>
+                    </div>
+                    <aside class="movies_aside">
+                        <!-- List years movies -->
+                        <div class="movies_aside_years">
+                            <div class="movies_aside_years--title">
+                                Năm phát hành
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                            <div class="movies_aside_years--list"></div>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="movies_aside_banner">
+                            <img src="https://image.tmdb.org/t/p/w500/whZL1Q3Alb3yQJfptJCoY4AmyyA.jpg" alt="" />
+                            <h3>quái vật bể nước</h3>
+                            <p>2023</p>
+                        </a>
+                        <div class="movies_aside_list"></div>
+                    </aside>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="footer_content">
+                    <div class="footer_main">
+                        <div class="footer_main_img">
+                            <img src="./images/footer-header.png" alt="" />
+                        </div>
+                        <div class="footer_main_text">
+                            <span>Phimmoi</span> - Trang xem phim Online với giao diện mới được bố trí và thiết kế thân
+                            thiện với người dùng. Nguồn phim được tổng hợp từ các website lớn với đa dạng các đầu phim
+                            và thể loại vô cùng phong phú.
+                        </div>
+                    </div>
+                    <div class="footer_list">
+                        <div class="footer_list--title">Phim mới</div>
+                        <ul class="footer_list--list">
+                            <li class="footer_list--item">Phim Khoa Học</li>
+                            <li class="footer_list--item">Phim Kinh Dị</li>
+                            <li class="footer_list--item">Phim Viễn Tưởng</li>
+                            <li class="footer_list--item">Phim Chiếu Rạp</li>
+                            <li class="footer_list--item">Phim Hành Động</li>
+                        </ul>
+                    </div>
+                    <div class="footer_list">
+                        <div class="footer_list--title">Phim mới</div>
+                        <ul class="footer_list--list">
+                            <li class="footer_list--item">Phim Khoa Học</li>
+                            <li class="footer_list--item">Phim Kinh Dị</li>
+                            <li class="footer_list--item">Phim Viễn Tưởng</li>
+                            <li class="footer_list--item">Phim Chiếu Rạp</li>
+                            <li class="footer_list--item">Phim Hành Động</li>
+                        </ul>
+                    </div>
+                    <div class="footer_list">
+                        <div class="footer_list--title">Phim mới</div>
+                        <ul class="footer_list--list">
+                            <li class="footer_list--item">Phim Khoa Học</li>
+                            <li class="footer_list--item">Phim Kinh Dị</li>
+                            <li class="footer_list--item">Phim Viễn Tưởng</li>
+                            <li class="footer_list--item">Phim Chiếu Rạp</li>
+                            <li class="footer_list--item">Phim Hành Động</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_banner">
+                    <div class="footer_banner_right">© Phimmoi</div>
+                    <div class="footer_banner_left">
+                        <ul class="footer_banner_left--icon">
+                            <li class="footer_banner_left--icon--item">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li class="footer_banner_left--icon--item">
+                                <i class="fa-brands fa-telegram"></i>
+                            </li>
+                            <li class="footer_banner_left--icon--item">
+                                <i class="fa-brands fa-twitter"></i>
+                            </li>
+                            <li class="footer_banner_left--icon--item">
+                                <i class="fa-brands fa-youtube"></i>
+                            </li>
+                            <li class="footer_banner_left--icon--item show-to-top">
+                                <i class="fa-solid fa-caret-up"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./scripts/header.js"></script>
+        <script src="./scripts/body.js"></script>
+        <script src="./scripts/footer.js"></script>
+        <script src="./scripts/topic-list-mizu.js"></script>
+        <script src="./scripts/movie_type.js"></script>
+        <script src="./scripts/aside_movie_card.js"></script>
+        <script src="./scripts/item_per_page.js"></script>
+        <!-- icon  -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>

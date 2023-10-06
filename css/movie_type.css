@@ -51,23 +51,21 @@
 }
 
 .big-title h1::before {
-    content: "";
+    content: '';
     width: 300px;
     height: 4px;
     background-color: #272727;
     display: inline-block;
     margin-right: 10px;
-
 }
 
 .big-title h1::after {
-    content: "";
+    content: '';
     width: 300px;
     height: 4px;
     background-color: #272727;
     display: inline-block;
     margin-left: 10px;
-
 }
 
 .movies_box {
@@ -79,6 +77,13 @@
     align-content: flex-start;
     overflow: hidden;
     overflow-y: scroll;
+}
+
+.movies_box.litmit_movies {
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px 160px;
+    height: 250px;
+    overflow: hidden;
 }
 
 .movies_box article {
